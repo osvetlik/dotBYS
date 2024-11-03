@@ -1,11 +1,14 @@
 # dotBYS
 BreathCare device data format parser
 
-## Format analysis
-* `0x34 (52)` bytes header size
+## File format
+* `00-33`: `0x34 (52)` bytes header size
+* `34-EOF`: 10 bytes long data chunks
+* `34-3d`: first chunk, each chunk covers 60 seconds (1 minute)
+
+## Header format
 * `1e-2d`: SN
 * `2e-2f`: number of data chunks (10 bytes each), big endian 16 bits
-* `34-3d`: first chunk, each chunk covers 60 seconds (1 minute)
 
 ## Chunk format
 Most of the bytes are zero, they might be used by some other type of machine, but mine
