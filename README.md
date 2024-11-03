@@ -2,7 +2,7 @@
 BreathCare device data format parser
 
 ## File format
-* `00-33`: `0x34 (52)` bytes header size
+* `00-33`: `0x34 (52)` bytes header
 * `34-EOF`: 10 bytes long data chunks
 * `34-3d`: first chunk, each chunk covers 60 seconds (1 minute)
 
