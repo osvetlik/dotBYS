@@ -18,6 +18,6 @@ only uses 3 bytes (what I've found so far).
 * `0x05` - flags, `0x01` is probably AI, don't know about HI, most probably `0x02` but not confirmed
 * `0x06` - not used
 * `0x07` - not used
-* `0x08` - leakage - so far I expect a linear mapping from 0-255 range to 0-100 could be sufficient
-* `0x09` - pressure - same as leakage, linear mapping from 0-255 range to 0-20 should do the trick
+* `0x08` - leakage - so far I expect a linear mapping from 0-255 range to 0-100 l/m could be sufficient
+* `0x09` - pressure - same as leakage, linear mapping from 0-255 range to 0-20 cmH2O should do the trick
 
